@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hurtownia>
+ <pracownicy>
+   <pracownik idP="1">
+       <imie>Marcin</imie>
+       <nazwisko>Nowacki</nawisko>
+       <data_ur>1999-12-11</data_ur>
+       <wynagrodzenie>3600.90</wynagrodzenie>
+       <adres>
+           <miasto>Olsztyn</miasto
+	   <ulica>Mickiewicza</ulica>
+	   <nr_budynku>21B</nr_budynku>
+	   <kod_pocztowy>62-245</kod_pocztowy
+       </adres>       
+   </pracownik>
+   <pracownik idP="2">
+       <imie>Wojciech</imie>
+       <nazwisko>Leszczyński</nawisko>
+       <data_ur>1998-11-01</data_ur>
+       <wynagrodzenie>4200.30</wynagrodzenie>
+       <adres>
+           <miasto>Warszawa</miasto
+	   <ulica>Klonowa</ulica>
+	   <nr_budynku>41C</nr_budynku>
+	   <kod_pocztowy>24-665</kod_pocztowy
+       </adres>       
+   </pracownik>
+   <pracownik idP="3">
+       <imie>Joanna</imie>
+       <nazwisko>Walczak</nawisko>
+       <data_ur>1992-04-21</data_ur>
+       <wynagrodzenie>4750.20</wynagrodzenie>
+       <adres>
+           <miasto>Warszawa</miasto
+	   <ulica>Sienkiewicza</ulica>
+	   <nr_budynku>15F</nr_budynku>
+	   <kod_pocztowy>24-662</kod_pocztowy
+       </adres>       
+   </pracownik>
+   <pracownik idP="4">
+       <imie>Stanisław</imie>
+       <nazwisko>Kowalski</nawisko>
+       <data_ur>1984-09-02</data_ur>
+       <wynagrodzenie>4060.50</wynagrodzenie>
+       <adres>
+           <miasto>Szczecin</miasto
+	   <ulica>Brzozowa</ulica>
+	   <nr_budynku>8</nr_budynku>
+	   <kod_pocztowy>56-335</kod_pocztowy
+       </adres>       
+   </pracownik>
+   <pracownik idP="5">
+       <imie>Katarzyna</imie>
+       <nazwisko>Leszczyńska</nawisko>
+       <data_ur>1994-07-19</data_ur>
+       <wynagrodzenie>3900.65</wynagrodzenie>
+       <adres>
+           <miasto>Wrocław</miasto
+	   <ulica>Stokrotkowa</ulica>
+	   <nr_budynku>12B</nr_budynku>
+	   <kod_pocztowy>78-771</kod_pocztowy
+       </adres>       
+   </pracownik>
+ </pracownicy>
+ <meble>
+   <mebel>
+	<nazwa>Sunflare Medium</nazwa>
+	<kategoria>lampy</kategoria>
+        <cena>80.80</cena>
+        <stan>48</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Dębiarz C7</nazwa>
+	<kategoria>stoły</kategoria>
+        <cena>406.20</cena>
+        <stan>34</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Komfort Extra</nazwa>
+	<kategoria>fotele</kategoria>
+        <cena>789.99</cena>
+        <stan>31</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Chmurka M</nazwa>
+	<kategoria>łóżka</kategoria>
+        <cena>1799.99</cena>
+        <stan>28</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Sosner L</nazwa>
+	<kategoria>stoły</kategoria>
+        <cena>649.99</cena>
+        <stan>48</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Lampex 6C</nazwa>
+	<kategoria>lampy</kategoria>
+        <cena>100.99</cena>
+        <stan>78</stan>
+   </mebel>
+   <mebel>
+	<nazwa>Emperor</nazwa>
+	<kategoria>fotele</kategoria>
+        <cena>1199.99</cena>
+        <stan>45</stan>
+   </mebel> 		
+ </meble>
+ <dostawy>
+   <dostawa>
+        <pracownik_id>3<pracownik_id>
+        <dostawca>SPEEDEX</dostawca>
+        <mebel>Emperor</mebel>
+        <ilosc>10</ilosc>
+        <data>2018-12-12</data> 
+   </dostawa>
+ </dostawy>
+</hurtownia>
