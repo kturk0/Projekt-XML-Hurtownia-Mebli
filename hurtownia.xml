@@ -1,118 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hurtownia>
+<hurtownia xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com/xml hurtownia.xsd">
  <pracownicy>
    <pracownik idP="1">
        <imie>Marcin</imie>
-       <nazwisko>Nowacki</nawisko>
+       <nazwisko>Nowacki</nazwisko>
        <data_ur>1999-12-11</data_ur>
        <wynagrodzenie>3600.90</wynagrodzenie>
        <adres>
-           <miasto>Olsztyn</miasto
-	   <ulica>Mickiewicza</ulica>
-	   <nr_budynku>21B</nr_budynku>
-	   <kod_pocztowy>62-245</kod_pocztowy
+           <miasto>Olsztyn</miasto>
+	         <ulica>Mickiewicza</ulica>
+	         <nr_budynku>21B</nr_budynku>
+	         <kod_pocztowy>62-245</kod_pocztowy>
        </adres>       
    </pracownik>
    <pracownik idP="2">
        <imie>Wojciech</imie>
-       <nazwisko>Leszczyński</nawisko>
+       <nazwisko>Leszczyński</nazwisko>
        <data_ur>1998-11-01</data_ur>
        <wynagrodzenie>4200.30</wynagrodzenie>
        <adres>
-           <miasto>Warszawa</miasto
-	   <ulica>Klonowa</ulica>
-	   <nr_budynku>41C</nr_budynku>
-	   <kod_pocztowy>24-665</kod_pocztowy
+           <miasto>Warszawa</miasto>
+	         <ulica>Klonowa</ulica>
+	         <nr_budynku>41C</nr_budynku>
+	         <kod_pocztowy>24-665</kod_pocztowy>
        </adres>       
    </pracownik>
    <pracownik idP="3">
        <imie>Joanna</imie>
-       <nazwisko>Walczak</nawisko>
+       <nazwisko>Walczak</nazwisko>
        <data_ur>1992-04-21</data_ur>
        <wynagrodzenie>4750.20</wynagrodzenie>
        <adres>
-           <miasto>Warszawa</miasto
-	   <ulica>Sienkiewicza</ulica>
-	   <nr_budynku>15F</nr_budynku>
-	   <kod_pocztowy>24-662</kod_pocztowy
+           <miasto>Warszawa</miasto>
+	         <ulica>Sienkiewicza</ulica>
+	         <nr_budynku>15F</nr_budynku>
+	         <kod_pocztowy>24-662</kod_pocztowy>
        </adres>       
    </pracownik>
    <pracownik idP="4">
        <imie>Stanisław</imie>
-       <nazwisko>Kowalski</nawisko>
+       <nazwisko>Kowalski</nazwisko>
        <data_ur>1984-09-02</data_ur>
        <wynagrodzenie>4060.50</wynagrodzenie>
        <adres>
-           <miasto>Szczecin</miasto
-	   <ulica>Brzozowa</ulica>
-	   <nr_budynku>8</nr_budynku>
-	   <kod_pocztowy>56-335</kod_pocztowy
+           <miasto>Szczecin</miasto>
+	         <ulica>Brzozowa</ulica>
+           <nr_budynku>8</nr_budynku>
+           <kod_pocztowy>56-335</kod_pocztowy>
        </adres>       
    </pracownik>
    <pracownik idP="5">
        <imie>Katarzyna</imie>
-       <nazwisko>Leszczyńska</nawisko>
+       <nazwisko>Leszczyńska</nazwisko>
        <data_ur>1994-07-19</data_ur>
        <wynagrodzenie>3900.65</wynagrodzenie>
        <adres>
-           <miasto>Wrocław</miasto
-	   <ulica>Stokrotkowa</ulica>
-	   <nr_budynku>12B</nr_budynku>
-	   <kod_pocztowy>78-771</kod_pocztowy
+           <miasto>Wrocław</miasto>
+	         <ulica>Stokrotkowa</ulica>
+	         <nr_budynku>12B</nr_budynku>
+	         <kod_pocztowy>78-771</kod_pocztowy>
        </adres>       
    </pracownik>
  </pracownicy>
+ <klienci>
+   <klient idK="1">
+       <imie>Marcin</imie>
+       <nazwisko>Lesicki</nazwisko>
+       <data_ur>1994-09-22</data_ur>
+       <adres>
+           <miasto>Zamość</miasto>
+	         <ulica>Matejki</ulica>
+	         <nr_budynku>1C</nr_budynku>
+	         <kod_pocztowy>23-771</kod_pocztowy>
+       </adres>       
+   </klient>
+   <klient idK="2">
+       <imie>Grzegorz</imie>
+       <nazwisko>Maj</nazwisko>
+       <data_ur>1991-07-30</data_ur>
+       <adres>
+           <miasto>Katowice</miasto>
+	         <ulica>Leszczyńska</ulica>
+	         <nr_budynku>27D/64</nr_budynku>
+	         <kod_pocztowy>11-881</kod_pocztowy>
+       </adres>       
+   </klient>
+   <klient idK="3">
+       <imie>Aleksandra</imie>
+       <nazwisko>Wybicka</nazwisko>
+       <data_ur>1972-01-08</data_ur>
+       <adres>
+           <miasto>Warszawa</miasto>
+	         <ulica>Kościuski</ulica>
+	         <nr_budynku>15</nr_budynku>
+	         <kod_pocztowy>24-441</kod_pocztowy>
+       </adres>       
+   </klient>
+   <klient idK="4">
+       <imie>Mariusz</imie>
+       <nazwisko>Staniszewski</nazwisko>
+       <data_ur>1962-05-22</data_ur>
+       <adres>
+           <miasto>Poznań</miasto>
+	         <ulica>Słonecznikowa</ulica>
+	         <nr_budynku>45C/22</nr_budynku>
+       	   <kod_pocztowy>56-547</kod_pocztowy>
+       </adres>       
+   </klient>
+ </klienci>
  <meble>
-   <mebel>
-	<nazwa>Sunflare Medium</nazwa>
-	<kategoria>lampy</kategoria>
+   <mebel idM="1">
+	      <nazwa>Sunflare Medium</nazwa>
+	      <kategoria>lampy</kategoria>
         <cena>80.80</cena>
         <stan>48</stan>
    </mebel>
-   <mebel>
-	<nazwa>Dębiarz C7</nazwa>
-	<kategoria>stoły</kategoria>
+   <mebel idM="2">
+	      <nazwa>Dębiarz C7</nazwa>
+	      <kategoria>stoły</kategoria>
         <cena>406.20</cena>
         <stan>34</stan>
    </mebel>
-   <mebel>
-	<nazwa>Komfort Extra</nazwa>
-	<kategoria>fotele</kategoria>
+   <mebel idM="3">
+       	<nazwa>Komfort Extra</nazwa>
+	      <kategoria>fotele</kategoria>
         <cena>789.99</cena>
         <stan>31</stan>
    </mebel>
-   <mebel>
-	<nazwa>Chmurka M</nazwa>
-	<kategoria>łóżka</kategoria>
+   <mebel idM="4">
+	      <nazwa>Chmurka M</nazwa>
+	      <kategoria>łóżka</kategoria>
         <cena>1799.99</cena>
         <stan>28</stan>
    </mebel>
-   <mebel>
-	<nazwa>Sosner L</nazwa>
-	<kategoria>stoły</kategoria>
+   <mebel idM="5">
+	      <nazwa>Sosner L</nazwa>
+	      <kategoria>stoły</kategoria>
         <cena>649.99</cena>
         <stan>48</stan>
    </mebel>
-   <mebel>
-	<nazwa>Lampex 6C</nazwa>
-	<kategoria>lampy</kategoria>
+   <mebel idM="6">
+	      <nazwa>Lampex 6C</nazwa>
+	      <kategoria>lampy</kategoria>
         <cena>100.99</cena>
         <stan>78</stan>
    </mebel>
-   <mebel>
-	<nazwa>Emperor</nazwa>
-	<kategoria>fotele</kategoria>
+   <mebel idM="7">
+	      <nazwa>Emperor</nazwa>
+	      <kategoria>fotele</kategoria>
         <cena>1199.99</cena>
         <stan>45</stan>
    </mebel> 		
  </meble>
  <dostawy>
    <dostawa>
-        <pracownik_id>3<pracownik_id>
+        <pracownik_id>3</pracownik_id>
         <dostawca>SPEEDEX</dostawca>
-        <mebel>Emperor</mebel>
+        <mebel_id>2</mebel_id>
         <ilosc>10</ilosc>
         <data>2018-12-12</data> 
    </dostawa>
+   <dostawa>
+        <pracownik_id>1</pracownik_id>
+        <dostawca>Mebex</dostawca>
+        <mebel_id>4</mebel_id>
+        <ilosc>20</ilosc>
+        <data>2018-12-07</data> 
+   </dostawa>
+   <dostawa>
+        <pracownik_id>4</pracownik_id>
+        <dostawca>SPEEDEX</dostawca>
+        <mebel_id>5</mebel_id>
+        <ilosc>30</ilosc>
+        <data>2018-11-29</data> 
+   </dostawa>
  </dostawy>
+ <zamowienia>
+   <zamowienie>
+        <klient_id>2</klient_id>
+        <mebel_id>3</mebel_id>
+        <ilosc>2</ilosc>
+        <data>2018-10-21</data>
+   </zamowienie>
+   <zamowienie>
+        <klient_id>1</klient_id>
+        <mebel_id>1</mebel_id>
+        <ilosc>3</ilosc>
+        <data>2018-11-02</data>
+   </zamowienie>
+   <zamowienie>
+        <klient_id>2</klient_id>
+        <mebel_id>2</mebel_id>
+        <ilosc>1</ilosc>
+        <data>2018-10-16</data>
+   </zamowienie>
+      <zamowienie>
+        <klient_id>4</klient_id>
+        <mebel_id>5</mebel_id>
+        <ilosc>3</ilosc>
+        <data>2018-11-05</data>
+   </zamowienie>
+ </zamowienia>
 </hurtownia>

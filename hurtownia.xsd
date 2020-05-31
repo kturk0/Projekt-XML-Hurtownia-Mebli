@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://www.w3schools.com"
+            xmlns="https://www.w3schools.com"
+            elementFormDefault="qualified">
+
+  <xsd:simpleType name="imieType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="nazwiskoType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="dataType">
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="wynagrodzenieType">
+    <xsd:restriction base="xsd:decimal"/>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="miastoType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="ulicaType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="nr_budynkuType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="kod_pocztowyType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]*-[0-9]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="nazwaType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="kategoriaType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="cenaType">
+    <xsd:restriction base="xsd:decimal"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="stanType">
+    <xsd:restriction base="xsd:integer">
+      <xsd:minInclusive value="0"/>
+    </xsd:restriction>  
+  </xsd:simpleType>
+
+  <xsd:simpleType name="pracownik_idType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="dostawcaType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="mebel_idType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="iloscType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="klient_idType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="idPType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="idKType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="idMType">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:complexType name="adresType">
+    <xsd:sequence>
+      <xsd:element name="miasto" type="miastoType"/>
+      <xsd:element name="ulica" type="ulicaType"/>
+      <xsd:element name="nr_budynku" type="nr_budynkuType"/>
+      <xsd:element name="kod_pocztowy" type="kod_pocztowyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="pracownikType">
+    <xsd:sequence>
+      <xsd:element name="imie" type="imieType"/>
+      <xsd:element name="nazwisko" type="nazwiskoType"/>
+      <xsd:element name="data_ur" type="dataType"/>
+      <xsd:element name="wynagrodzenie" type="wynagrodzenieType"/>
+      <xsd:element name="adres" type="adresType"/>
+    </xsd:sequence>
+    <xsd:attribute name="idP" type="idPType" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="pracownicyType">
+    <xsd:sequence>
+      <xsd:element name="pracownik" type="pracownikType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="klientType">
+    <xsd:sequence>
+      <xsd:element name="imie" type="imieType"/>
+      <xsd:element name="nazwisko" type="nazwiskoType"/>
+      <xsd:element name="data_ur" type="dataType"/>
+      <xsd:element name="adres" type="adresType"/>
+    </xsd:sequence>
+    <xsd:attribute name="idK" type="idKType" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="klienciType">
+    <xsd:sequence>
+      <xsd:element name="klient" type="klientType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="mebelType">
+    <xsd:sequence>
+      <xsd:element name="nazwa" type="nazwaType"/>
+      <xsd:element name="kategoria" type="kategoriaType"/>
+      <xsd:element name="cena" type="cenaType"/>
+      <xsd:element name="stan" type="stanType"/>
+    </xsd:sequence>
+    <xsd:attribute name="idM" type="idMType" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="mebleType">
+    <xsd:sequence>
+      <xsd:element name="mebel" type="mebelType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="dostawaType">
+    <xsd:sequence>
+      <xsd:element name="pracownik_id" type="pracownik_idType"/>
+      <xsd:element name="dostawca" type="dostawcaType"/>
+      <xsd:element name="mebel_id" type="mebel_idType"/>
+      <xsd:element name="ilosc" type="iloscType"/>
+      <xsd:element name="data" type="dataType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="dostawyType">
+    <xsd:sequence>
+      <xsd:element name="dostawa" type="dostawaType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="zamowienieType">
+    <xsd:sequence>
+      <xsd:element name="klient_id" type="klient_idType"/>
+      <xsd:element name="mebel_id" type="mebel_idType"/>
+      <xsd:element name="ilosc" type="iloscType"/>
+      <xsd:element name="data" type="dataType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="zamowieniaType">
+    <xsd:sequence>
+      <xsd:element name="zamowienie" type="zamowienieType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="hurtowniaType">
+    <xsd:sequence>
+      <xsd:element name="pracownicy" type="pracownicyType"/>
+      <xsd:element name="klienci" type="klienciType"/>
+      <xsd:element name="meble" type="mebleType"/>
+      <xsd:element name="dostawy" type="dostawyType"/>
+      <xsd:element name="zamowienia" type="zamowieniaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="hurtownia" type="hurtowniaType">
+    <xsd:key name="idP_Key">
+      <xsd:selector xpath="./pracownicy/pracownik"/>
+      <xsd:field xpath="@idP"/>
+    </xsd:key>
+    <xsd:keyref name="pracownik_idRef" refer="idP_Key">
+      <xsd:selector xpath="./dostawy/dostawa"/>
+      <xsd:field xpath="pracownik_id"/>
+    </xsd:keyref>
+
+    <xsd:key name="idK_Key">
+      <xsd:selector xpath="./klienci/klient"/>
+      <xsd:field xpath="@idK"/>
+    </xsd:key>
+    <xsd:keyref name="klient_idRef" refer="idK_Key">
+      <xsd:selector xpath="./zamowienia/zamowienie"/>
+      <xsd:field xpath="klient_id"/>
+    </xsd:keyref>
+
+    <xsd:key name="idM_Key">
+      <xsd:selector xpath="./meble/mebel"/>
+      <xsd:field xpath="@idM"/>
+    </xsd:key>
+    <xsd:keyref name="mebelD_idRef" refer="idM_Key">
+      <xsd:selector xpath="./dostawy/dostawa" />
+      <xsd:field xpath="mebel_id"/>
+    </xsd:keyref>
+    <xsd:keyref name="mebelZ_idRef" refer="idM_Key">
+      <xsd:selector xpath="./zamowienie/zamowienia"/>
+      <xsd:field xpath="mebel_id"/>
+    </xsd:keyref>
+  </xsd:element>
+  
+</xsd:schema>
