@@ -1,0 +1,37 @@
+<!ELEMENT hurtownia   (pracownicy,klienci,meble,dostawy,zamowienia)>
+
+<!ELEMENT pracownicy   (pracownik*)>
+<!ELEMENT klienci   (klient*)>
+<!ELEMENT meble   (mebel*)>
+<!ELEMENT dostawy   (dostawa*)>
+<!ELEMENT zamowienia  (zamowienie)>
+
+<!ELEMENT adres   (miasto,ulica,nr_budynku,kod_pocztowy)>
+<!ELEMENT pracownik   (imie,nazwisko,data_ur,wynagrodzenie,adres)>
+<!ELEMENT klient   (imie,nazwisko,data_ur,adres)>
+<!ELEMENT mebel   (nazwa,kategoria,cena,stan)>
+<!ELEMENT dostawa   (pracownik_id,dostawca,mebel_id,ilosc,data)>
+<!ELEMENT zamowienie  (klient_id,mebel_id,ilosc,data)>
+
+<!ELEMENT imie    (#PCDATA)>
+<!ELEMENT nazwisko   (#PCDATA)>
+<!ELEMENT data_ur       (#PCDATA)>
+<!ELEMENT wynagrodzenie   (#PCDATA)>
+<!ELEMENT miasto   (#PCDATA)>
+<!ELEMENT ulica   (#PCDATA)>
+<!ELEMENT nr_budynku   (#PCDATA)>
+<!ELEMENT kod_pocztowy   (#PCDATA)>
+<!ELEMENT nazwa   (#PCDATA)>
+<!ELEMENT kategoria   (#PCDATA)>
+<!ELEMENT cena   (#PCDATA)>
+<!ELEMENT stan   (#PCDATA)>
+<!ELEMENT pracownik_id   (#PCDATA)>
+<!ELEMENT dostawca  (#PCDATA)>
+<!ELEMENT mebel_id  (#PCDATA)>
+<!ELEMENT ilosc  (#PCDATA)>
+<!ELEMENT data   (#PCDATA)>
+<!ELEMENT klient_id   (#PCDATA)>
+
+<!ATTLIST pracownik idP ID #REQUIRED>
+<!ATTLIST klient idK ID #REQUIRED>
+<!ATTLIST mebel idM ID #REQUIRED>
