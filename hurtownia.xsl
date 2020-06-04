@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns="http://www.w3.org/1999/xhtml"
   xmlns:foo="https://www.w3schools.com"
   exclude-result-prefixes="foo">
 <xsl:template match="/">
   <html>
+  <head>
+      <link rel="stylesheet" href="styl.css" type="text/css"/>
+  </head>
   <body>
   <h2>PRACOWNICY</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr class="w1">
       <th>Imię</th>
       <th>Nazwiskoo</th>
       <th>Data urodzenia</th>
@@ -33,11 +37,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   </table>
   <h2>KLIENCI</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr class="w1">
       <th>Imię</th>
       <th>Nazwiskoo</th>
       <th>Data urodzenia</th>
-      <th>Wynagrodzenie</th>
       <th>Miasto</th>
       <th>Ulica</th>
       <th>Nr. budynku</th>
@@ -48,7 +51,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
       <td><xsl:value-of select="foo:imie"/></td>
       <td><xsl:value-of select="foo:nazwisko"/></td>
       <td><xsl:value-of select="foo:data_ur"/></td>
-      <td><xsl:value-of select="foo:wynagrodzenie"/></td>
       <td>
         <xsl:value-of select="foo:adres/foo:miasto"/>
       </td>
@@ -66,7 +68,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   </table>
   <h2>MEBLE</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr class="w1">
       <th>Nazwa</th>
       <th>Kategoria</th>
       <th>Cena</th>
@@ -91,7 +93,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   </table>
   <h2>DOSTAWY</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr class="w1">
       <th>ID pracownika</th>
       <th>Dostawca</th>
       <th>ID mebla</th>
@@ -120,7 +122,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   </table>
   <h2>ZAMÓWIENIA</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr class="w1">
       <th>ID klienta</th>
       <th>ID mebla</th>
       <th>Ilość</th>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hurtownia SYSTEM "hurtownia.dtd">
 <?xml-stylesheet type="text/xsl" href="hurtownia.xsl"?>
-<hurtownia xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://www.w3schools.com/xml hurtownia.xsd">
+<hurtownia xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com/xml hurtownia.xsd">
  <pracownicy>
    <pracownik idP="1">
        <imie>Marcin</imie>
@@ -154,7 +153,7 @@ xsi:schemaLocation="https://www.w3schools.com/xml hurtownia.xsd">
         <cena>1199.99</cena>
         <stan>45</stan>
    </mebel> 		
- </meble>
+</meble>
  <dostawy>
    <dostawa>
         <pracownik_id>3</pracownik_id>
